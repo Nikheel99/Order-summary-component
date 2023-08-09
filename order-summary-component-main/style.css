@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&family=Lato:wght@700&family=Poppins:wght@300;400;500;600&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+  font-family: "Red Hat Display", sans-serif;
+  background: #e0e8ff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.image {
+  background: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  background-size: contain;
+}
+
+.summary {
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  /* margin: 4.44rem 1.5rem; */
+  padding-bottom: 20px;
+  border-radius: 1.25rem;
+  max-width: 28.125rem;
+  height: 43.5625rem;
+  background: #fff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+.container .hero-image {
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  background-size: contain;
+  margin-bottom: 0;
+}
+
+.container .summary h1 {
+  margin-top: 1rem;
+  color: #1f2e55;
+  text-align: center;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.summary > p {
+  margin-top: 1.06rem;
+  color: #717fa6;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 1.25rem;
+}
+
+.container .about {
+  padding: 0 30px;
+}
+
+.container .summary .price {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
+  background-color: #f7f9ff;
+  width: 90%;
+  border-radius: 0.6875rem;
+  margin-top: 1.25rem;
+}
+
+.container .price article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .summary .price article img {
+  margin-left: 1.5rem;
+}
+
+.container .summary .price article h4 {
+  margin-left: 1.25rem;
+  color: #1f2e55;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.container .summary .price article p {
+  margin-left: 1.25rem;
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 16px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-change {
+  color: #382ae1;
+  background-color: transparent;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-left: 4.3rem;
+}
+
+.btn-primary {
+  width: 22.125rem;
+  height: 3.125rem;
+  background-color: #382ae1;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 0.6875rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+.btn-primary:hover,
+.btn-change:hover {
+  opacity: 0.5;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #717fa6;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.btn-secondary:hover {
+  color: #1f2e55;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 767px) {
+  .image {
+    background: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  body {
+    padding: 4.44rem 1.5rem;
+  }
+
+  .container {
+    margin: 3rem 2.5rem;
+    /* width: 500px; */
+  }
+
+  .btn-secondary {
+    margin-top: 0.5rem;
+  }
+
+  .container .summary h1 {
+    font-size: 1.375rem;
+    margin-top: 0.5rem;
+  }
+
+  .container .summary .price article h4 {
+    font-size: 0.875rem;
+  }
+}
